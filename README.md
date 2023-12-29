@@ -6,7 +6,7 @@
 
 ### Tela de Login
 ### credenciais:
-Antes de tudo é recomendado importar todas as bibliotecas localizadas na pasta " dis > lib ";
+Antes de tudo é recomendado importar todas as bibliotecas localizadas na pasta bibliotecas ou na pasta src " dis > lib ";
 A database foi feita com base em jpa "sql", 
 voce pode usar xampp ou wampserver,etc e criar apenas uma base de dados com nome "Penitenciaria2023"
 NB: a base de dados deve estar activa!
