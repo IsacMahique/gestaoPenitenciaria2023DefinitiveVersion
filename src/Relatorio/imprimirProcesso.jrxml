@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="imprimirProcesso" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5e50ac5a-9fcb-49fb-93a6-90a42e8ddd00">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.jrdax"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="nome" class="java.lang.String"/>
+	<parameter name="dataDeNascimento" class="java.lang.String"/>
+	<parameter name="nacionalidade" class="java.lang.String"/>
+	<parameter name="naturalidade" class="java.lang.String"/>
+	<parameter name="numeroBi" class="java.lang.String"/>
+	<parameter name="Genero" class="java.lang.String"/>
+	<parameter name="localResidencia" class="java.lang.String"/>
+	<parameter name="doenca" class="java.lang.String"/>
+	<parameter name="nomeDoenca" class="java.lang.String"/>
+	<parameter name="cuidadosBasicos" class="java.lang.String"/>
+	<parameter name="registoCrime" class="java.lang.String"/>
+	<parameter name="crimes" class="java.lang.String"/>
+	<parameter name="data" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT `ANTECEDENTESCRIMINAIS`,
+	`CRIMESCOMETIDOS`,
+	`CUIDADOSBASICOS`,
+	`DATADENASCIMENTO`,
+	`DOENCA`,
+	`GENERO`,
+	`LOCALRESIDENCIA`,
+	`NACIONALIDADE`,
+	`NATURALIDADE`,
+	`NOMECOMPLETO`,
+	`NOMEDOENCA`,
+	`NUMEROBI`
+FROM penitenciaria2023.processo WHERE NOMECOMPLETO=$P{nome}]]>
+	</queryString>
+	<field name="ANTECEDENTESCRIMINAIS" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ANTECEDENTESCRIMINAIS"/>
+		<property name="com.jaspersoft.studio.field.label" value="ANTECEDENTESCRIMINAIS"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="processo"/>
+		<fieldDescription><![CDATA[antecedentesCriminais]]></fieldDescription>
+	</field>
+	<field name="CRIMESCOMETIDOS" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CRIMESCOMETIDOS"/>
+		<property name="com.jaspersoft.studio.field.label" value="CRIMESCOMETIDOS"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="processo"/>
+		<fieldDescription><![CDATA[crimesCometidos]]></fieldDescription>
+	</field>
+	<field name="CUIDADOSBASICOS" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CUIDADOSBASICOS"/>
+		<property name="com.jaspersoft.studio.field.label" value="CUIDADOSBASICOS"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="processo"/>
+		<fieldDescription><![CDATA[cuidadosBasicos]]></fieldDescription>
+	</field>
+	<field name="DATADENASCIMENTO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DATADENASCIMENTO"/>
+		<property name="com.jaspersoft.studio.field.label" value="DATADENASCIMENTO"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="processo"/>
+		<fieldDescription><![CDATA[dataDeNascimento]]></fieldDescription>
+	</field>
+	<field name="DOENCA" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DOENCA"/>
+		<property name="com.jaspersoft.studio.field.label" value="DOENCA"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="processo"/>
+		<fieldDescription><![CDATA[doenca]]></fieldDescription>
+	</field>
+	<field name="GENERO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="GENERO"/>
+		<property name="com.jaspersoft.studio.field.label" value="GENERO"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="processo"/>
+		<fieldDescription><![CDATA[genero]]></fieldDescription>
+	</field>
+	<field name="LOCALRESIDENCIA" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="LOCALRESIDENCIA"/>
+		<property name="com.jaspersoft.studio.field.label" value="LOCALRESIDENCIA"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="processo"/>
+		<fieldDescription><![CDATA[localResidencia]]></fieldDescription>
+	</field>
+	<field name="NACIONALIDADE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NACIONALIDADE"/>
+		<property name="com.jaspersoft.studio.field.label" value="NACIONALIDADE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="processo"/>
+		<fieldDescription><![CDATA[nacionalidade]]></fieldDescription>
+	</field>
+	<field name="NATURALIDADE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NATURALIDADE"/>
+		<property name="com.jaspersoft.studio.field.label" value="NATURALIDADE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="processo"/>
+		<fieldDescription><![CDATA[naturalidade]]></fieldDescription>
+	</field>
+	<field name="NOMECOMPLETO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NOMECOMPLETO"/>
+		<property name="com.jaspersoft.studio.field.label" value="NOMECOMPLETO"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="processo"/>
+		<fieldDescription><![CDATA[nomeCompleto]]></fieldDescription>
+	</field>
+	<field name="NOMEDOENCA" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NOMEDOENCA"/>
+		<property name="com.jaspersoft.studio.field.label" value="NOMEDOENCA"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="processo"/>
+		<fieldDescription><![CDATA[nomeDoenca]]></fieldDescription>
+	</field>
+	<field name="NUMEROBI" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NUMEROBI"/>
+		<property name="com.jaspersoft.studio.field.label" value="NUMEROBI"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="processo"/>
+		<fieldDescription><![CDATA[numeroBi]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement x="183" y="57" width="189" height="21" uuid="a76f4b20-8750-413d-82d1-51ee22e4d017"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gestao Penitenciaria]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="374" splitType="Stretch">
+			<staticText>
+				<reportElement x="4" y="31" width="118" height="17" uuid="6fe3545a-fb69-4695-ba9f-73adf8f459a5"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nome: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="52" width="120" height="14" uuid="2094de74-8cfd-4395-ae05-f6adb878eda0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Data de Nascimento: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="69" width="120" height="16" uuid="d970c1cd-34cd-43df-9c04-b409209a06c4"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nacionalidade: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="92" width="120" height="14" uuid="6a8fa6bd-8e0e-4e73-8118-d260ae83e9b3"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Naturalidade:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="318" y="31" width="100" height="17" uuid="ed7a3c3d-5631-467b-a1e8-31ec11db5068"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Numero do Bi:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="318" y="52" width="100" height="15" uuid="cef430bf-7007-4297-901b-141e20c9e44d"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Genero:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="318" y="70" width="105" height="15" uuid="e7d703aa-002a-45cb-8b17-5860d7f75046"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Local de Residencia:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="1" width="100" height="19" uuid="689fbe84-ce4d-4348-8f93-b1e9f0fb0c36"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dados Pessoais]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="135" width="550" height="1" uuid="09580395-eecc-4cf5-b5af-ac2ee7c62790"/>
+			</line>
+			<staticText>
+				<reportElement x="11" y="138" width="100" height="15" uuid="6c55f2c3-8378-4363-830a-dc4b68e01e8f"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dados Medicos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="175" width="147" height="20" uuid="744ee3be-7f6e-4e4b-a206-18c3543f9c10"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Alguma doenca/deficiencia:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="210" width="100" height="18" uuid="1cfe8039-e775-43f2-8398-fa3cf71178f4"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nome da Doenca:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="172" width="100" height="23" uuid="777b9e43-a0be-4ba4-8483-d460b10e780d"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Cuidados Basicos:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="4" y="244" width="550" height="1" uuid="26ead96a-8b19-45e3-bdb4-cde6b86c6871"/>
+			</line>
+			<staticText>
+				<reportElement x="10" y="244" width="100" height="15" uuid="b47f39f0-e733-4ebd-82e1-890867d4e389"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dados Criminais]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="288" width="150" height="17" uuid="abc8fb91-6ed5-4092-ad83-43d9f7e98b12"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Possui Algum Registo Criminal:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="320" width="100" height="15" uuid="60bead11-ad91-41f2-8665-ee157d3cc665"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Registos Criminais]]></text>
+			</staticText>
+			<line>
+				<reportElement x="8" y="0" width="550" height="1" uuid="79ef7e7a-8f2c-4ff9-b2c4-b2332f60db8f"/>
+			</line>
+			<textField>
+				<reportElement x="128" y="31" width="100" height="17" uuid="cd3d8a2b-b36c-487b-9363-13fdee0d92cf"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="128" y="51" width="129" height="16" uuid="b5c24a49-e160-4ed0-a577-edf698fa8f47"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataDeNascimento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="128" y="73" width="100" height="15" uuid="fcd82fe1-8b83-454a-83d4-7381010d7e1a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nacionalidade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="128" y="92" width="100" height="15" uuid="8549b89b-987e-45a0-9c68-f96015556fe4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{naturalidade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="31" width="100" height="17" uuid="c5273a99-7115-4da9-8237-4bf98bdb29e7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numeroBi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="52" width="100" height="15" uuid="319d5819-781d-4cd4-b26b-e2a05c54acaf"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Genero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="68" width="100" height="18" uuid="3853c998-2141-46f1-8b6b-6b1ba430a0cf"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{localResidencia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="157" y="176" width="100" height="18" uuid="690dd9d7-3065-488e-8405-946c39fc9e7c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{doenca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="157" y="211" width="100" height="16" uuid="b210f9ce-e0e7-467a-904a-d653873b605c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nomeDoenca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="173" width="114" height="63" uuid="774e0db1-7c9f-4af7-8664-74d932fdfd38"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cuidadosBasicos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="169" y="285" width="100" height="22" uuid="fca1d492-5293-4188-82f7-f67dac75e95a"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{registoCrime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="169" y="316" width="376" height="42" uuid="83b4f88d-7fd2-49b4-8520-f90c408122ea"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{crimes}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement x="5" y="1" width="548" height="15" uuid="64a71acd-b846-4042-9d2c-49524a2ef794"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="2" y="1" width="550" height="1" uuid="ec5322b6-12ca-4c32-9216-233a78df5fbf"/>
+			</line>
+		</band>
+	</pageFooter>
+</jasperReport>
